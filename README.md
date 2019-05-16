@@ -1,35 +1,25 @@
 # Tutorial
-A tutorial project to show Maslow Create works
+
+![](/project.svg)
+
 ## Tutorial
 
 
-Maslow Create is a new kind of CAD program, it is a CAD program which is built on logic instead of drawing. The CAD model is created by connecting logical blocks. Here you can see the most simple form of this where we create a circle, and then connect it to an 'extrude' block which makes it 3D.
+Maslow Create is a new type of CAD program where you define the thing you want to create logically, rather than by drawing. Each project is composed of Atoms and Molecules. Each atom performs one logical task like rotating the shape, each Molecule can contain any number of inter connected Atoms. To place an atom or molecule right click anywhere on the flow drawing canvas.
 
 
-The logical elements which we can connect together are referred to as 'Atoms'. A number of atom can be joined together to form a new logical element called a 'Molecule'. Double click on a molecule to see and edit it's structure 
+Molecules like this one let you layer your model to create more space. Real estate on the screen is intentionally limited to keep projects from becoming cluttered. There is no limit to how deep you can logically nest Atoms in Molecules
 
 
-## Molecule
+This difference Atom subtracts one shape from another. For the opposite behavior check out the intersection atom.
 
 
-Each atom has 0 or more inputs and 1 output. 
+## Molecule - Rotate and Move
 
 
-A molecule can contain any amount of logic, but only logic attached to the output will be used
+These Input atoms define the inputs for the Molecule
 
 
-Click on the molecule here to see some more examples
-
-
-## Molecules can have names too
-
-
-Another useful tool to know about is the shrink wrap atom. It essentially "shrink wraps" multiple 2D shapes into one
-
-
-To place your own molecules right click anywhere on the canvas an play around. There is a TON more to Maslow Create including GitHub integration, bill of materials management and collaborative design, but that's enough to begin understanding the idea of how it works.
-
-
-The area in the lower right corner of the screen contains information about the currently selected atom. Some values may be editable if you click on them
+The output of the program defines what will be displayed in the project thumbnail and what shape will be used for displaying changes over time. The output of the project should be connected to the output Atom. Each Molecule comes with one Output atom which cannot be deleted.
 
 
